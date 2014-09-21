@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Exercice ToodoList KRDS</title>
+	<!-- Call the CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- NORMALIZE -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FONT AWESOME -->
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- Call the jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+     <script src="application/todolist.js"></script> <!-- Core of the App -->
+     <script src="application/events.js"></script> <!-- Events of the DOM -->
+</head>
+
+<body>
+    <header>
+        <h1>Test for Krds</h1>
+    </header>
+
+    <main>
+        <section id="tasks_list_ul">
+			<h2>To-Do List</h2>
+            <ul></ul>
+        </section>
+
+		<section id="todolist_form" class="hide">
+			<form action="">
+				<label for="task_content">Add a new task in the To-Do List!</label>
+				<input type="text" name="task_content" id="task_content" placeholder=" What do you have to do?" required/>
+				<input type="submit" name="Save" value="Save" id="save_task"> <!-- Save-Task button -->
+			</form>
+		</section>
+
+		<section>
+			<button type="button" name="button" id="add_task"><i class="fa fa-plus" aria-hidden="true"></i></button>
+			<button type="button" name="button" id="delete_task"><i class="fa fa-trash" aria-hidden="true"></i></button>
+		</section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="application/main.js"></script>
+</body>
